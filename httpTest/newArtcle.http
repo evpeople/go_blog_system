@@ -1,0 +1,8 @@
+POST http://localhost:3456/article
+Content-Type: application/json
+
+{
+  "Author": "testAuthor",
+  "Content": "content",
+  "FirstPicture": ""
+}
