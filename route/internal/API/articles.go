@@ -47,6 +47,7 @@ func AnalyzeMethod(w http.ResponseWriter, req *http.Request) {
 func addNewArticle(w http.ResponseWriter, req *http.Request) {
 	var article model.ArticleModel
 	var jsonData map[string]string
+
 	if err := json.NewDecoder(req.Body).Decode(&jsonData); err != nil {
 		log.Println(err)
 	}
