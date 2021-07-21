@@ -1,4 +1,4 @@
-POST http://localhost:3456/article
+POST {{host}}
 Content-Type: application/json
 
 {
@@ -6,3 +6,9 @@ Content-Type: application/json
   "Content": "content",
   "FirstPicture": ""
 }
+
+###
+GET {{host}}
+Accept: application/json
+
+GET {{host}}/test/1
