@@ -11,6 +11,11 @@ type ArticleModel struct {
 	constructor.Article
 }
 
+/*type APIArticleModel struct {
+	ID uint
+	Category string
+}*/
+
 var DB *gorm.DB
 
 func init() {
@@ -19,5 +24,8 @@ func init() {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	DB.AutoMigrate(&ArticleModel{})
+	err = DB.AutoMigrate(&ArticleModel{})
+	if err != nil {
+		return
+	}
 }

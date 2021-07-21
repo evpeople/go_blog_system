@@ -7,6 +7,7 @@ type Article struct {
 	FirstPicture string //头图
 	ReplyNum     int
 	LikeNum      int
+	Category     string
 }
 
 func (receiver *Article) Constuctor(author string, content string, firstPicture string) {

@@ -1,7 +1,6 @@
 package route
 
 import (
-	"fmt"
 	"github.com/gorilla/mux"
 	"go_blog_system/route/internal/API"
 	"net/http"
@@ -19,8 +18,5 @@ func init() {
 
 	//所有post方法的路由
 	rp.HandleFunc("/api/v1/articles/", API.AddNewArticle)
-
-}
-func test(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "hehe")
+	http.Handle("/", r)
 }
