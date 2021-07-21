@@ -3,14 +3,14 @@ a blog system write with golang and vue
 
 ## 使用
 clone库后，运行server.go，然后在浏览器访问127.0.0.1:3456 或 localhost:3456 ，若出现404 错误，则运行成功
-访问/api 可得到api列表
+访问route 文件夹 可得对应的api
 
 ## 目前进度
 
 ### API 
-- [ ] 上传文章API
-- [ ] 展示单个文章API
-- [ ] 展示文章列表API
+- [x] 上传文章API
+- [x] 展示单个文章API
+- [x] 展示文章列表API
 - [ ] API上传的确权(以防被POST炸满数据库)
 - [ ] 按照分类展示的API
 - [ ] 按照标签展示的API
