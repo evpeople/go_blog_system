@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/shared": "^3.2.0-beta.5",
     "core-js": "^3.6.5",
     "element-plus": "^1.0.2-beta.58",
     "vue": "^2.6.11"
@@ -36,7 +37,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    }
   },
   "browserslist": [
     "> 1%",
